@@ -278,6 +278,42 @@ We have documented the role of every file and folder in this project in a dedica
 
 ![IDE Folder Structure](PLACEHOLDER_FOLDER_STRUCTURE_SCREENSHOT)
 
+---
+
+# Sprint 2: Widget Tree & Reactive UI
+
+## 1. The Widget Tree
+Everything in Flutter is a widget. They are arranged in a hierarchy (Tree).
+Here is the structure of our `ReactiveDemo` app:
+
+```text
+MaterialApp
+ ┗ Scaffold
+    ┣ AppBar
+    ┗ Center
+       ┗ Column
+          ┣ Text (Counter)
+          ┣ SizedBox
+          ┣ Container (Colored Box)
+          │  ┗ Text (Status)
+          ┗ ElevatedButton
+```
+
+## 2. Reactive Model
+Flutter does not update the screen by modifying pixels directly. It relies on **State**.
+1.  **State Change**: We change a variable (e.g., `_boxColor`).
+2.  **Trigger**: We call `setState()`.
+3.  **Rebuild**: Flutter re-runs the `build()` method.
+4.  **Update**: Flutter compares the new widget tree with the old one and updates *only* what changed (the Container color and Text).
+
+## 3. Demo Evidence
+**Task**: Add screenshots of the app in "Blue" state and "Green" state.
+
+| State A (Blue) | State B (Green) |
+| :---: | :---: |
+| ![Blue State](PLACEHOLDER_BLUE_STATE) | ![Green State](PLACEHOLDER_GREEN_STATE) |
+
+
 
 
 
