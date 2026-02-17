@@ -313,6 +313,32 @@ Flutter does not update the screen by modifying pixels directly. It relies on **
 | :---: | :---: |
 | ![Blue State](PLACEHOLDER_BLUE_STATE) | ![Green State](PLACEHOLDER_GREEN_STATE) |
 
+---
+
+# Sprint 2: Stateless vs Stateful Widgets
+
+## 1. Concept Overview
+
+### A. Stateless Widgets
+*   **Definition**: Widgets that describe part of the UI which is **constant**.
+*   **Behavior**: Built once. Does *not* store mutable state.
+*   **Use Case**: Icons, Labels, Static Text, Simple wrappers.
+*   **Example**: `StatelessHeader` in our demo simply renders the title passed to it.
+
+### B. Stateful Widgets
+*   **Definition**: Widgets that describe part of the UI which can **change**.
+*   **Behavior**: Maintains a mutable `State` object. Can be rebuilt multiple times.
+*   **Use Case**: Checkboxes, Forms, Sliders, Counters, Animations.
+*   **Example**: `StatefulCounter` maintains a `_count` variable and updates the UI when `setState` is called.
+
+## 2. Demo & Evidence
+**Task**: Replace the screenshots below.
+
+| Initial State (Dynamic part is Orange) | Interaction State (Dynamic part is Green) |
+| :---: | :---: |
+| ![Initial](PLACEHOLDER_INITIAL_STATE) | ![Interacted](PLACEHOLDER_INTERACTED_STATE) |
+
+
 
 
 
