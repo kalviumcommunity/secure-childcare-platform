@@ -70,10 +70,55 @@ Flutter uses a reactive model. When the state of a widget changes (e.g., via `se
 
 ## 6. Demo Notes (Mock Walkthrough)
 *   **Simple UI Demo**: Shows a standard Material app with a blue "Hello Flutter" AppBar and centered "Welcome to Flutter!" text. It demonstrates the basic `Scaffold` structure.
-*   **Counter App Demo**:
-    *   Starts with specific state (`count = 0`).
-    *   Tap the **+** Floating Action Button.
-    *   The `increment()` function runs `setState()`.
     *   The UI updates dynamically to show "Count: 1", then "2", etc.
     *   This proves the reactive nature of the framework.
+
+---
+
+# Lesson 2: Firebase Services and Real-Time Data
+
+## 1. Set Up Firebase for Your Flutter App
+To connect your app to Firebase:
+1.  Go to the [Firebase Console](https://console.firebase.google.com/).
+2.  Click **Add Project** and give it a name.
+3.  Add an Android/iOS app to your project.
+4.  Download the config file (`google-services.json` for Android or `GoogleService-Info.plist` for iOS) and place it in your app directory.
+5.  Add dependencies in `pubspec.yaml` (see `pubspec_copy.yaml` for example):
+    ```yaml
+    dependencies:
+      firebase_core: ^3.0.0
+      cloud_firestore: ^5.0.0
+      firebase_auth: ^5.0.0
+    ```
+6.  Initialize Firebase in `main.dart`:
+    ```dart
+    void main() async {
+      WidgetsFlutterBinding.ensureInitialized();
+      await Firebase.initializeApp();
+      runApp(MyApp());
+    }
+    ```
+
+## 2. Key Firebase Services
+| Service | Purpose | Example Use Case |
+| :--- | :--- | :--- |
+| **Firebase Authentication** | Manages user identities (Sign up/Login). | Login with Email, Google, or Phone. |
+| **Cloud Firestore** | NoSQL database with real-time syncing. | Chat apps, live dashboards, shared lists. |
+| **Firebase Storage** | Stores user-generated files. | Profile pictures, video uploads. |
+
+## 3. Firebase Authentication
+We use `FirebaseAuth` to manage users.
+*   **Sign Up**: Creates a new account in your Firebase project.
+*   **Sign In**: Authenticates an existing user and returns a `User` object.
+*   *Code Example*: See `firebase_auth_example.dart`.
+
+## 4. Cloud Firestore (Real-Time Database)
+Firestore stores data in **Documents** arranged in **Collections**.
+*   **Real-time Updates**: Using `snapshots()`, your app listens to the database. When data changes on the server (or by another user), your app updates *instantly* without a refresh.
+*   *Code Example*: See `firestore_example.dart`. The `StreamBuilder` widget rebuilds the UI every time a new snapshot arrives.
+
+## 5. Firebase Storage
+Used for uploading and retrieving large files.
+*   *Code Example*: See `storage_example.dart`. It demonstrates uploading a file and getting a download URL.
+
 
