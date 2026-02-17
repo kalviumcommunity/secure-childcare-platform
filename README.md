@@ -121,4 +121,44 @@ Firestore stores data in **Documents** arranged in **Collections**.
 Used for uploading and retrieving large files.
 *   *Code Example*: See `storage_example.dart`. It demonstrates uploading a file and getting a download URL.
 
+---
+
+# Lesson 3: Design Thinking & Responsive UI
+
+## 1. The 5 Stages of Design Thinking
+An approach to problem-solving that centers on the user.
+1.  **Empathize**: Understand user needs (e.g., users want quick access to tasks).
+2.  **Define**: State the core problem.
+3.  **Ideate**: Brainstorm solutions.
+4.  **Prototype**: Create mockups in **Figma**.
+5.  **Test**: Build in Flutter and refine.
+
+## 2. Figma to Flutter Translation
+How to map design concepts to widgets:
+| Design Element | Flutter Widget | Notes |
+| :--- | :--- | :--- |
+| Text / Headings | `Text` | Use `TextStyle` for font, weight, color. |
+| Buttons | `ElevatedButton` | Style with `ElevatedButton.styleFrom`. |
+| Layout Grid | `Row`, `Column` | Use `Expanded` for flexible sizing. |
+| Cards / Shadows | `Card`, `Container` | Add 'elevation' or `BoxDecoration`. |
+
+*   *Code Example*: See `design_translation_example.dart`. It maps a specific color palette and typography spec to a Flutter Theme.
+
+## 3. Responsive & Adaptive Design
+Your app runs on phones, tablets, and web. It needs to adapt.
+
+### Key Techniques
+1.  **MediaQuery**:
+    *   Gets the screen size (`MediaQuery.of(context).size.width`).
+    *   *Usage*: "If width < 600px, show mobile layout. Else, show tablet layout."
+2.  **LayoutBuilder**:
+    *   Similar to MediaQuery but works on the parent widget's constraints, not the whole screen.
+3.  **Flexible / Expanded**:
+    *   Allows widgets to fill available space proportionally.
+
+*   *Code Example*: See `responsive_layout_example.dart`.
+    *   **Mobile (< 600px)**: Shows a single `Column` with a summary card and list.
+    *   **Tablet (>= 600px)**: Shows a `Row` with the summary card on the left and list on the right.
+
+
 
