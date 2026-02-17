@@ -345,6 +345,33 @@ Flutter does not update the screen by modifying pixels directly. It relies on **
 | :---: | :---: |
 | ![Initial](PLACEHOLDER_INITIAL_STATE) | ![Interacted](PLACEHOLDER_INTERACTED_STATE) |
 
+---
+
+# Sprint 2: Hot Reload & DevTools
+
+## 1. Hot Reload (⚡)
+**Why it matters**: It allows you to see changes instantly without restarting the app.
+*   **Try it**: Run the app, change the text "Modify this text" in `devtools_demo.dart`, save the file, and watch the app update instantly.
+
+## 2. Debug Console
+**Why it matters**: It shows logs (`debugPrint`) and errors.
+*   **Try it**: Click the "Log to Console" button. Look at your IDE's terminal/debug console to see `"Current Counter Value: X"`.
+
+## 3. Flutter DevTools
+**Why it matters**: It lets you inspect the widget tree layout and debug UI issues visually.
+*   **Try it**: Open DevTools (in VS Code: `Ctrl+Shift+P` -> `Open DevTools`). Use the **Widget Inspector** to click on the "Inspect me" widget.
+
+## 4. Evidence
+**Task**: Replace the screenshots below.
+
+| Debug Console Log | Widget Inspector View |
+| :---: | :---: |
+| ![Console](PLACEHOLDER_CONSOLE_SCREENSHOT) | ![Inspector](PLACEHOLDER_INSPECTOR_SCREENSHOT) |
+
+### 🎥 Video Demo
+[**Link to My Video Demo**](PLACEHOLDER_VIDEO_LINK)
+
+
 
 
 
