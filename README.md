@@ -185,6 +185,27 @@ The "Welcome Screen" demonstrates:
 *   **Column**: Vertical layout of elements.
 *   **State Management**: Clicking "Click Me!" toggles the text and icon, showing how `setState` rebuilds the UI.
 
+---
+
+# Sprint 2: Responsive Mobile Interfaces
+
+## 1. Responsiveness Strategy
+We use `MediaQuery` to detect screen width and switch layouts.
+*   **Breakpoint**: `600px`.
+*   **Mobile (< 600px)**: Uses a `Column` layout typical for narrow screens.
+*   **Tablet (> 600px)**: Introduces a `NavigationRail` and expands content horizontally using `Row` and `Expanded`.
+
+## 2. Adaptive Widgets Used
+*   **`LayoutBuilder` / `MediaQuery`**: For conditional layout logic.
+*   **`GridView`**: Dynamically changes `crossAxisCount` (2 columns on mobile, 4 on tablet).
+*   **`NavigationRail`**: Standard navigation component for larger screens.
+
+## 3. How to Test
+1.  Run `lib/main_responsive.dart`.
+2.  Resize your browser window (if using Web) or rotate your emulator/device.
+3.  Observe the header text change and the navigation menu appear/disappear.
+
+
 
 
 
