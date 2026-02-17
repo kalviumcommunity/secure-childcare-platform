@@ -263,10 +263,17 @@ Since this environment doesn't have Flutter installed, follow these steps on you
 
 # Sprint 2: Folder Structure Exploration
 
-## 1. Structure Overview
-We have documented the role of every file and folder in this project in a dedicated guide.
+## 1. Monorepo Structure
+We have restructured the project to separate concerns:
 
-👉 **[Read the Full Project Structure Guide](PROJECT_STRUCTURE.md)**
+*   **`frontend/`**: Contains the Flutter application code (`lib`, `assets`, tests).
+*   **`backend/`**: Reserved for server-side logic and configuration.
+
+## 2. Structure Overview
+We have documented the role of every file and folder in the Flutter project (`frontend/`) in a dedicated guide.
+
+👉 **[Read the Frontend Structure Guide](PROJECT_STRUCTURE.md)**
+
 
 ## 2. Key Takeaways
 *   **`lib/`**: Contains all your Dart code.
