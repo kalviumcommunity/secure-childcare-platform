@@ -230,6 +230,36 @@ We use `MediaQuery` to detect screen width and switch layouts.
 3.  Click "Create an Account", fill details, and Sign Up.
 4.  Check Firebase Console -> Authentication (User created) & Firestore (Data saved).
 
+---
+
+# Sprint 2: Environment Setup
+
+## 1. Setup Guide
+Since this environment doesn't have Flutter installed, follow these steps on your local machine:
+
+1.  **Download Flutter SDK**: [flutter.dev/install](https://docs.flutter.dev/get-started/install)
+2.  **Add to PATH**: Ensure `flutter/bin` is in your system PATH variables.
+3.  **Run Doctor**: Execute `flutter doctor` in your terminal. All checkmarks should be green.
+4.  **Install Android Studio**: [developer.android.com/studio](https://developer.android.com/studio)
+    *   Install "Flutter" and "Dart" plugins.
+    *   Create a Virtual Device (AVD).
+
+## 2. Setup Verification
+**Task**: Replace the images below with your own screenshots after completing setup.
+
+### A. Flutter Doctor Output
+![Flutter Doctor Output](PLACEHOLDER_FLUTTER_DOCTOR_SCREENSHOT)
+*Goal: Show that Flutter, Android toolchain, and Android Studio are installed and healthy.*
+
+### B. Emulator Running App
+![Running App on Emulator](PLACEHOLDER_EMULATOR_SCREENSHOT)
+*Goal: Show the default counter app running on on Android Emulator.*
+
+## 3. Reflection
+*   **Challenges**: (Write your reflection here - e.g., "Setting up JAVA_HOME was tricky...")
+*   **Preparation**: This setup ensures a stable environment for building complex UIs and integrating Firebase later.
+
+
 
 
 
