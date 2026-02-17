@@ -205,6 +205,32 @@ We use `MediaQuery` to detect screen width and switch layouts.
 2.  Resize your browser window (if using Web) or rotate your emulator/device.
 3.  Observe the header text change and the navigation menu appear/disappear.
 
+---
+
+# Sprint 2: Firebase Integration (Auth & Firestore)
+
+## 1. Setup Instructions
+**Crucial**: This code requires a Firebase project.
+1.  Go to [Firebase Console](https://console.firebase.google.com/).
+2.  Create a project and add an Android/iOS app.
+3.  **Download Config**:
+    *   `google-services.json` (Android) -> place in `android/app/`.
+    *   `GoogleService-Info.plist` (iOS) -> place in `ios/Runner/`.
+4.  **Dependencies**: Already added in `pubspec.yaml` (`firebase_auth`, `cloud_firestore`).
+5.  **Uncomment Code**: In `lib/main_firebase.dart`, uncomment `await Firebase.initializeApp();`.
+
+## 2. Features Implemented
+*   **Authentication**: `AuthService` handles Sign Up and Login.
+*   **Cloud Firestore**: `FirestoreService` stores user details (name, email) in a `users` collection upon sign up.
+*   **UI Flow**: Login Screen -> Sign Up Screen.
+
+## 3. How to Test
+1.  Configure the Firebase project as above.
+2.  Run `lib/main_firebase.dart`.
+3.  Click "Create an Account", fill details, and Sign Up.
+4.  Check Firebase Console -> Authentication (User created) & Firestore (Data saved).
+
+
 
 
 
