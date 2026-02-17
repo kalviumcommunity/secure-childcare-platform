@@ -259,6 +259,26 @@ Since this environment doesn't have Flutter installed, follow these steps on you
 *   **Challenges**: (Write your reflection here - e.g., "Setting up JAVA_HOME was tricky...")
 *   **Preparation**: This setup ensures a stable environment for building complex UIs and integrating Firebase later.
 
+---
+
+# Sprint 2: Folder Structure Exploration
+
+## 1. Structure Overview
+We have documented the role of every file and folder in this project in a dedicated guide.
+
+👉 **[Read the Full Project Structure Guide](PROJECT_STRUCTURE.md)**
+
+## 2. Key Takeaways
+*   **`lib/`**: Contains all your Dart code.
+*   **`pubspec.yaml`**: Manages dependencies and assets.
+*   **`android/` & `ios/`**: Platform-specific configuration.
+
+## 3. Ide Setup
+**Task**: Replace the image below with a screenshot of your IDE's file explorer showing the folder tree.
+
+![IDE Folder Structure](PLACEHOLDER_FOLDER_STRUCTURE_SCREENSHOT)
+
+
 
 
 
