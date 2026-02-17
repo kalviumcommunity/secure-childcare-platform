@@ -160,5 +160,31 @@ Your app runs on phones, tablets, and web. It needs to adapt.
     *   **Mobile (< 600px)**: Shows a single `Column` with a summary card and list.
     *   **Tablet (>= 600px)**: Shows a `Row` with the summary card on the left and list on the right.
 
+---
+
+# Sprint 2: Flutter & Dart Basics
+
+## 1. Project Folder Structure
+A clean structure scales well.
+*   **`lib/main.dart`**: The entry point. Sets up the `MaterialApp` and Theme.
+*   **`lib/screens/`**: Contains full-page widgets (e.g., `WelcomeScreen`).
+*   **`lib/widgets/`**: Contains reusable UI components (e.g., `CustomButton`).
+*   **`lib/models/`**: (Future use) for data classes.
+
+## 2. Setup Instructions
+To run this project:
+1.  **Install Flutter**: Follow guides at [flutter.dev](https://flutter.dev/docs/get-started/install).
+2.  **Verify Install**: Run `flutter doctor`.
+3.  **Create Project**: `flutter create sprint_2_basics`.
+4.  **Add Code**: Copy the `lib/` folder from this repo into your new project.
+5.  **Run**: `flutter run`.
+
+## 3. Demo Description
+The "Welcome Screen" demonstrates:
+*   **scaffold**: Standard app layout with AppBar and Body.
+*   **Column**: Vertical layout of elements.
+*   **State Management**: Clicking "Click Me!" toggles the text and icon, showing how `setState` rebuilds the UI.
+
+
 
 
